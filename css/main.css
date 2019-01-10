@@ -1,0 +1,30 @@
+
+html {
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    min-height: 120px;
+    background-color: green;
+    justify-content: space-between;
+}
+
+header div {
+    display: inline-block;
+    height: 100%;
+    max-width: 25%;
+}
+
+main  {
+    height: 100%;
+}
+
+main div {
+    height: 300px;
+    background-color: yellow;
+}
