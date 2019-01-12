@@ -5,6 +5,12 @@ html {
 
 li {
     list-style-type: none;
+    background-color: grey;
+}
+
+li img {
+    max-height: 200px;
+    display: block;
 }
 
 header {
@@ -25,6 +31,10 @@ main  {
 }
 
 main div {
-    height: 300px;
-    background-color: yellow;
+    background-color: #ede;
 }
+
+.selected {
+    background-color: red;
+}
+
