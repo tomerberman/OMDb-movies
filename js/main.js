@@ -15,7 +15,7 @@ document.querySelector('form.search').addEventListener('submit', ev => {
 })
 
 function searchOnline() {
-    var api = `http://www.omdbapi.com/?apikey=d777cf78&s=${gState.query}&type=movie&page=${gState.page}`
+    var api = `https://www.omdbapi.com/?apikey=d777cf78&s=${gState.query}&type=movie&page=${gState.page}`
     fetch(api).then(res => {
         return res.json();
     }).then(resJson => {
