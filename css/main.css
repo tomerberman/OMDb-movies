@@ -123,22 +123,17 @@ h3 {
 main  {
     height: 100%;
     margin-top: 100px;
-
 }
 
 main div {
     background-color: #333;
 }
 
-.selected {
-    background-color: red;
-}
-
 .error-msg {
     margin: 0 auto;
     z-index: 100;
     position: fixed;
-    transform: translateX(50%);
+    /* transform: translateX(50%); */
     top: 88px;
     background-color: #ccc;
     padding: 10px;
@@ -179,4 +174,9 @@ input.go:hover {
 li:hover {
     filter: brightness(0.86);
     cursor: pointer;
+}
+
+.error-container {
+    display: flex;
+    justify-content: center;
 }
