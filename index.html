@@ -5,28 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Agile Movies</title>
+    <title>Movie Sparks</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
 </head>
 
 <body>
     <header>
-        <div>this is div1</div>
-        <form class="search">
-            <input class="movie-name" text" placeholder="Type movie name...">
-            <input type="submit" value="SUBMIT">
-            <div class="error-msg hide">Movie name must be 3 letters or more
-                <button onclick="onButtonOk(event)">OK</button>
-            </div>
-        </form>
         <div>
-            <button onclick="fff(event)">button1</button>
-            this is div2
+            <h1>Welcome to Movie Sparks</h1>
         </div>
+        <form class="search">
+            <input class="movie-name" type="text" placeholder="Type movie name...">
+            <input class="go" type="submit" value="Go">
+        </form>
     </header>
+    
+    <div class="error-msg hide">Movie name must be 3 letters or more
+        <button onclick="onButtonOk(event)">OK</button>
+    </div>
 
     <main>
-        <div> main div
+        <div class="list">
             <ul class="movie-list">
             </ul>
             <Button class="load-more" onclick="onLoadMore()">Load More</Button>

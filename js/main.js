@@ -24,8 +24,8 @@ function searchOnline() {
     }).then(resJson => {
         console.log('resjson:', resJson);
         if (resJson.Response && resJson.Response !== 'False') {
-            console.log('resJson.Response=',resJson.Response);
-            
+            console.log('resJson.Response=', resJson.Response);
+
             gState.list = resJson.Search;
             gState.totalResults = resJson.totalResults;
             gState.resultsEnded = false;
@@ -68,14 +68,16 @@ function renderList() {
 
     var strHtml = '';
     for (let i = 0; i < gState.list.length; i++) {
-        strHtml += `<li onclick="onMovieClicked(this,` + i
-            + `)">Movie ${i} Title: ${gState.list[i].Title}` +
-            `<img src="` + gState.list[i].Poster + `"></li>`
+        strHtml +=
+            `<li onclick="onMovieClicked(this,` + i + `)"><h3>${gState.list[i].Title}</h3>`
+            + `<img src="` + gState.list[i].Poster + `">`
+            + `<a href="https://www.imdb.com/title/${gState.list[i].imdbID}/" target="_blank">More on IMDb</a>`
+            + `</li>`
         console.log('data[' + i + '] =', gState.list[i].Title);
     }
     document.querySelector('ul').innerHTML = strHtml;
     if (gState.resultsEnded) {
-        document.querySelector('.load-more').setAttribute("disabled","");
+        document.querySelector('.load-more').setAttribute("disabled", "");
     }
 }
 
