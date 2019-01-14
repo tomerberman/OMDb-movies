@@ -1,4 +1,24 @@
 {
-  "name": "",
-  "version": ""
+  "name": "agilesparks",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "sweetalert": "^2.1.2"
+  },
+  "description": "\"# OMDb-movies\"",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomerberman/OMDb-movies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomerberman/OMDb-movies/issues"
+  },
+  "homepage": "https://github.com/tomerberman/OMDb-movies#readme"
 }
